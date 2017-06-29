@@ -1,0 +1,167 @@
+<!-- Projeto referente a 3ª nota da disciplina LINGUAGENS DE SCRIPT, lecionada pelo Prof. Luiz Carlos Chaves.
+O objetivo do projeto consiste em desenvolver um site web utilizando principalmente JS, para por em prática os conhecimentos teóricos vistos em sala de aula.
+Autora: Samyra Lara
+Última data de modificação: 03/10/13; -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Family Guy</title>
+<meta name="keywords" content="family guy, brian, stewie, lois, peter, meg, chris, quahog, Griffins"/>
+<link href="css/template_style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1-4-2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css"/> <!-- css do menu -->
+
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script> <!-- plugin Validate -->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js"></script> <!-- plugin smooth menu -->
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "templatemo_menu", //id do menu
+	orientation: 'h', //Menu horizontal
+	classname: 'ddsmoothmenu', //classe do menu
+	contentsource: "markup" //"markup" ou ["container_id", "path_to_menu_file"]
+})
+
+</script> 
+
+<!-- Carregar o arquivo JavaScript CloudCarousel -->
+<script type="text/JavaScript" src="js/cloud-carousel.1.0.5.js"></script> <!-- plugin Cloud Carousel -->
+ 
+<script type="text/javascript">
+$(document).ready(function(){ //quando o site for carregado, tal função deve ser executada
+						   
+	//Inicializa carrosséis nos elementos de container especificado, neste caso, carousel1.
+	$("#carousel1").CloudCarousel(		
+		{			
+			reflHeight: 40,
+			reflGap:2,
+			titleBox: $('#FamilyPictures'),
+			altBox: $('#FamilyPictures'),
+			buttonLeft: $('#slider-left-but'),
+			buttonRight: $('#slider-right-but'),
+			yRadius:30,
+			xPos: 480,
+			yPos: 32,
+			speed:0.15,
+		}
+	);
+});
+ 
+</script>
+
+</head> 
+<body id="home">
+<!-- início do menu -->
+<div id="templatemo_header_wrapper">
+     <div id="templatemo_menu" class="ddsmoothmenu">
+        <ul>
+            <li><a href="index.html" class="selected">Início</a></li> <!-- fica sempre selecionado -->
+            <li><a href="">Sobre</a>
+                <ul>
+                    <li><span class="top"></span><span class="bottom"><a href="index.html"></span></a></li>
+                    <li><a href="history.html">História</a></li>
+                    <li><a href="creator.html">Criador</a></li>
+              	</ul>
+            </li>
+            <li><a href=""> Os Griffins</a>
+                <ul>
+                    <li><span class="top"></span><span class="bottom"></span></li>
+                    <li><a href="">Lois</a></li>
+                    <li><a href="">Peter</a></li>
+                    <li><a href="">Stewie</a></li>
+                    <li><a href="">Chris</a></li>
+                    <li><a href="">Mag</a></li>
+                    <li><a href="">Brian</a></li>
+              	</ul>
+            </li>
+            <li><a href="http://meadd.com/familiadapesadafan_">Fan Clube</a></li>
+            <li><a href="contact.html">Contato</a></li>
+        </ul>
+        <br style="clear: left" />
+    </div> <!-- final do menu -->
+
+    <div class="cleaner"></div>
+</div>	<!-- Final do templatemo_header_wrapper -->
+<div id="templatemo_slider">
+	<!-- Arquivos contidos no Carrosel -->
+    <div id = "carousel1" style="width:960px; height:280px;background:none;overflow:scroll; margin-top: 20px">            
+        <!-- Todas as imagens contidas no carrosel estão aqui-->
+        <a href="" rel="lightbox"><img class="cloudcarousel" src="images/slider/1.jpg" alt="" title="1º Temporada" /></a>
+        <a href="" rel="lightbox"><img class="cloudcarousel" src="images/slider/2.jpg" alt="" title="8º Temporada" /></a>
+        <a href="" rel="lightbox"><img class="cloudcarousel" src="images/slider/3.jpg" alt="" title="7º Temporada" /></a>
+        <a href="" rel="lightbox"><img class="cloudcarousel" src="images/slider/4.jpg" alt="" title="6º Temporada" /></a>
+        <a href="" rel="lightbox"><img class="cloudcarousel" src="images/slider/5.jpg" alt="" title="5ª Temporada" /></a>
+        <a href="" rel="lightbox"><img class="cloudcarousel" src="images/slider/6.jpg" alt="" title="4º Temporada" /></a>
+        <a href="" rel="lightbox"><img class="cloudcarousel" src="images/slider/7.jpg" alt="" title="3º temporada" /></a>
+        <a href="" rel="lightbox"><img class="cloudcarousel" src="images/slider/8.jpg" alt="" title="2º temporada" /></a>
+    </div>
+    
+    <!-- Definição dos botões direito e esquerdo para movimentar o carousel-->
+    <center>
+    <input id="slider-left-but" type="button" value="" />
+    <input id="slider-right-but" type="button" value="" />
+    </center>
+</div>
+<div id="templatemo_main">
+    <!-- primeira div-->
+    <div class="col one_third fp_services">
+    <h2>Bem-vindo!!</h2>
+        <p>Esse site é dedicado ao melhor seriado de todos os tempos: Family Guy! Aqui você poderá encontrar tudo sobre essa maravilhosa família. Nosso site hoje conta com todas as temporadas de Family Guy, algumas dubladas e a maioria legendadas. Todas em perfeita qualidade para que você usuário, possa desfrutar do melhor seriado já criado.</p>
+        Acompanhe também o site oficial da série, clique na imagem abaixo:<br> <br>
+        <center><a target="_blank" href="http://www.fox.com/familyguy/"><img title="Family Guy Oficial" src="http://www.familyguy.com.br/180x40.png" alt="http://www.fox.com/familyguy/" width="180" height="40" /></a></center>
+  	</div>
+    <!-- segunda div-->
+    <div class="col one_third fp_services">
+        <h2>Notícias Recentes</h2>
+        <div class="rp_pp">
+            <img src="images/simpsonsguy.jpg" alt="Image 01" />
+            <a href="#">Family Guy e os Simpsons terão episódios juntos</a>
+            <p>Out 01, 2013 - 151 comentários</p>
+            <div class="cleaner"></div>
+        </div>
+        <div class="rp_pp">
+            <img src="images/deep.jpg" alt="Image 02" />
+            <a href="#">Johnny Depp vai participar de Family Guy</a>
+            <p>Out 02, 2013 - 84 comentários</p>
+            <div class="cleaner"></div>
+        </div>
+        <div class="rp_pp">
+            <img src="images/curiosidades.jpg" alt="Image 03" />
+            <a href="#">Conheça algumas curiosidades de Family Guy</a>
+            <p>Out 03, 2013 - 79 comentários</p>
+            <div class="cleaner"></div>
+        </div>
+    </div>
+    <div class="col one_third no_margin_right fp_services">
+    <!-- terceira div-->
+        <h2>Comentários</h2>
+        <div class="testimonial">
+            <p>"Melhor série que já vi. Me desculpem os outros, mas é melhor que os Simpsons"</p>
+            <cite>Jéssica <span>- São Paulo</span></cite></div>
+        <div class="testimonial"><br>
+            <p>"Nossa o episódio deles com os Simpsons será demais. Não vejo a hora de assistí-lo."</p>
+            <cite>Lucas<span>- Paraíba</span></cite></div>
+        <div class="testimonial"><br>
+            <p>"Site maravilhoso! Adoro a série e sempre fico informada quando venho aqui!"</p>
+            <cite>Gabriela<span>- Pernambuco</span></cite></div>
+    </div>
+    
+    <div class="cleaner"></div>
+</div> <!-- FIM TEMPLATE PRINCIPAL-->
+    	<div class="cleaner"></div>
+    </div> <!-- fim do tempatemo_bottom -->
+<div id="templatemo_footer_wrapper">
+    <div id="templatemo_footer">
+         <p>Copyright © 2013 Samyra Lara</p>    	
+    </div> <!-- fim do templatemo_footer_wrapper -->
+</div> <!-- END of templatemo_footer -->
+</body>
+</html>

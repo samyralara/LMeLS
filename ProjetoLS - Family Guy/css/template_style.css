@@ -1,0 +1,284 @@
+/*
+Projeto referente a 3ª nota da disciplina LINGUAGENS DE SCRIPT, lecionada pelo Prof. Luiz Carlos Chaves.
+O objetivo do projeto consiste em desenvolver um site web utilizando principalmente JS, para
+por em prática os conhecimentos teóricos vistos em sala de aula.
+Autora: Samyra Lara
+Última data de modificação: 03/10/13;
+*/
+body {
+	margin: 0;
+	padding: 0;
+	color: #6e6e6e;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	line-height: 1.4em; 
+	background-color: #5990e2;
+	background-repeat: repeat-x;
+	background-position: top;
+}
+
+#home { 
+	background-image: url(../images/bg_family.jpg); 
+}
+
+
+a, a:link, a:visited { 
+	color: #1c53a5; 
+	font-weight: normal; 
+	text-decoration: none; 
+}
+
+a:hover { 
+	text-decoration: underline;
+}
+
+a.more { 
+	display: inline-block; 
+	padding-left: 12px; 
+	background: url(../images/templatemo_list.png) no-repeat 0 4px; 
+}
+
+p { 
+	margin: 0 0 10px 0; 
+	padding: 0; 
+}
+
+img { 
+	border: none; 
+}
+
+blockquote { 
+	font-style: italic; 
+	margin: 0 0 0 10px;
+}
+
+cite { 
+	font-weight: bold; 
+	color:#164182; 
+	font-size: 12px; 
+}
+
+cite span { 
+	font-weight: 400; 
+	color: #164182; 
+}
+
+h1, h2, h3, h4, h5, h6 { color:#114568; font-weight: normal; }
+h1 { font-size: 48px; margin: 0 0 30px; padding: 5px 0 }
+h2 { font-size: 30px; margin: 0 0 25px; padding: 5px 0 }
+h3 { font-size: 24px; margin: 0 0 20px; padding: 0; }
+h4 { font-size: 18px; margin: 0 0 15px; padding: 0; }
+h5 { font-size: 16px; margin: 0 0 10px; padding: 0;  }
+h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
+
+.cleaner { clear: both }
+.h10 { height: 10px }
+.h20 { height: 20px }
+.h30 { height: 30px }
+.h40 { height: 40px }
+.h50 { height: 50px }
+.divider { margin-bottom: 40px; padding-bottom: 20px; background: url(../images/templatemo_divider.png) repeat-x bottom; }
+
+.image_fr { float: right; margin: 3px 0 5px 20px }
+
+.float_l { float: left }
+.float_r { float: right }
+
+#templatemo_header_wrapper {
+	width: 960px;
+	margin: 0 auto;
+	padding: 40px 10px 20px;
+	background: url(../images/templatemo_header_dividier.png) repeat-x bottom;
+}
+
+#templatemo_slider {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0 10px 10px;
+}
+
+#templatemo_main {
+	width: 960px;
+	margin: 0 auto;
+	padding: 40px 10px 20px;
+	background: #d8ebf2;
+	border: 1px solid #fff;
+	margin-bottom: 40px;
+	text-align: justify;
+}
+
+#templatemo_footer_wrapper {
+	width: 100%;
+	background: #181818;
+	position: relative;
+	clear:both;
+}
+
+#templatemo_footer {
+	width: 960px;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+	position: relative;
+}
+
+#templatemo_footer p {
+	color: #6e6e6e;
+}
+
+#templatemo_menu { float: right }
+
+#slider-left-but { 
+	display: block; 
+	width: 30px; 
+	height: 30px; 
+	border: none; 
+	background: url(../images/templatemo_slider_left.png); 
+	margin-right: 10px; 
+}
+
+#slider-right-but { 
+	display: block; 
+	width: 30px; 
+	height: 30px; 
+	border: none; 
+	background: url(../images/templatemo_slider_right.png); 
+}
+
+.rp_pp { 
+	margin-bottom: 10px; 
+	padding-bottom: 10px; 
+	border-bottom: 1px dotted #ced4dc; 
+}
+
+.rp_pp img { 
+	float: left; 
+	margin-right: 15px; 
+	border: 3px solid #cee574; 
+}
+
+#history, #creator{
+	width: 890px;
+	margin: 0 auto;
+	padding: 40px 10px 20px;
+	background: #d8ebf2;
+	text-align: justify;
+}
+
+p.position { 
+	color: #f3a706; 
+	font-weight: bold; 
+	font-size: 12px; 
+	font-style: italic; 
+	margin-bottom: 10px; 
+}
+
+#contact_form { 
+	padding: 0; 
+	width: 410px; 
+	margin-bottom: 40px; 
+}
+
+#contact_form form { 
+	margin: 0px; 
+	padding: 0px; 
+}
+
+#contact_form form .input_field { 
+	width: 270px; 
+	padding: 5px; 
+	color: #333;  
+	background: #fff; 
+	border: 1px solid #dedede; 
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+#contact_form form label { 
+	display: block; 
+	width: 100px; 
+	margin-right: 12px; 
+	font-size: 12px; 
+}
+label.error { float: none; color: red; vertical-align: top; font-size: 7px }
+
+#contact_form form textarea { 
+	width: 398px; 
+	height: 200px; 
+	padding: 5px; 
+	color: #333;
+	background: #fff; 
+	border: 1px solid #dedede; 
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+#contact_form form .submit_btn { 
+	display: block; 
+	width: 80px; 
+	height: 25px; 
+	background: url(../images/templatemo_button_02.png); 
+	border: 1px solid #bb4d17; 
+	color: #fff; 
+	font-size:13px;
+	border: none; 
+	margin: 10px 0px;
+}
+
+
+#templatemo_bottom h4 span {
+	position: absolute;
+	top: 0;
+	left: -27px;
+	width: 27px;
+	height: 32px;
+	background: url(../images/templatemo_footer_header_left.png) no-repeat left;
+}
+
+#templatemo_bottom .bottom_box { 
+	padding: 0 30px; 
+}
+
+#templatemo_bottom a { 
+	color: #ffffff; 
+}
+
+.footer_list { 
+	margin: 0; 
+	padding: 0; 
+	list-style: none; 
+}
+
+.footer_list li { 
+	margin: 0 0 5px; 
+	padding: 0 0 5px; 
+	border-bottom: 1px dotted #313030; 
+}
+
+.footer_list li a { 
+	color: #aca6a6; 
+}
+
+.footer_social_button { 
+	clear: both; 
+	margin-bottom: 40px; 
+}
+
+.footer_social_button a { 
+	margin-right: 5px; 
+}
+
+.col { 
+	float: left; 
+	margin: 0 20px 20px 0; 
+}
+
+.half { 
+	width: 450px; 
+}
+
+#sidebar, .one_third { 
+	width: 300px; 
+}
