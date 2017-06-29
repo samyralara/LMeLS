@@ -1,4 +1,4 @@
-##**Projeto: Family Guy**##
+## **Projeto: Family Guy** ##
 
 Projeto referente a 3ª nota da disciplina LINGUAGENS DE SCRIPT, lecionada pelo Prof. Luiz Carlos Chaves, no curso de TSI - IFPB, 2013.1.
 O objetivo do projeto consiste em desenvolver um site web utilizando principalmente JS, para por em prática os conhecimentos teóricos vistos em sala de aula
@@ -48,4 +48,4 @@ Utilizei o github para disponibilizar o projeto.
 
 
 **Imagem do site:**
-![Projeto]()
+![Projeto](https://github.com/samyralara/LMeLS/blob/master/ProjetoLS%20-%20Family%20Guy/imagem%20do%20site.jpg)
