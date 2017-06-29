@@ -1,4 +1,4 @@
-## **Projeto: Super Games World** ##
+﻿## **Projeto: Super Games World** ##
 
 Projeto referente a 3ª nota da disciplina LINGUAGENS DE MARCAÇÃO, lecionada pelo Prof. Luiz Carlos Chaves, no curso de TSI - IFPB, 2012.2.
 O objetivo do projeto consiste em desenvolver um site web utilizando HTML, CSS e XML, para por em prática os conhecimentos teóricos vistos em sala de aula.
@@ -50,4 +50,5 @@ styles: onde se concentram todos os layouts das páginas;
 As páginas estão na pasta central intitulada pelo nome do projeto.
 Utilizamos o Dropbox para disponibilizar o projeto.
 
-
+**Imagem do site:**
+![Projeto](https://github.com/samyralara/LMeLS/blob/master/Projeto%20-%20Super%20Games%20World/imagem%20site.jpg)
