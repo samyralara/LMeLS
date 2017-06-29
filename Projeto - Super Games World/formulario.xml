@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE anotacao [
+<!ELEMENT anotacao (de, para, titulo, assunto)>
+<!ELEMENT de (#PCDATA)>
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT assunto (#PCDATA)>
+]>
+<anotacao>
+	<de>Samyra</de>
+	<para>LM 2012.1</para>
+	<titulo>Comentário do Usuário</titulo>
+	<assunto>Gostei do Site</assunto>
+</anotacao>

@@ -1,0 +1,132 @@
+/*
+Projeto referente a 3ª nota da disciplina LINGUAGENS DE MARCAÇÃO, lecionada pelo Prof. Luiz Carlos Chaves
+O objetivo do projeto consiste em desenvolver um site web utilizando HTML, CSS e XML, para por em prática os conhecimentos teóricos vistos em sala de aula.
+Autores: Samyra Lara e Fan Clemente
+Última modificação: 08/04/2013;
+*/
+
+html{overflow-y:scroll;} /* Forces a scrollbar when the viewport is larger than the websites content - CSS3 */
+
+body{margin:0; padding:0; font-size:13px; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; color:#FFFFFF;}
+
+.clear:after{content:"."; display:block; height:0; clear:both; visibility:hidden; line-height:0; text-align: justify; color:;}
+.clear{display:block; clear:both;}
+html[xmlns] .clear{display:block;}
+* html .clear{height:1%;}
+
+a{outline:none; text-decoration:none;}
+
+code{font-weight:normal; font-style:normal; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}
+
+.fl_left{float:left;}
+.fl_right{float:right;}
+
+img{margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;}
+.imgholder, .imgl, .imgr{padding:4px; border:1px solid #D6D6D6; text-align:center;}
+.imgl{float:left; margin:0 15px 15px 0; clear:left;}
+.imgr{float:right; margin:0 0 15px 15px; clear:right;}
+
+/*----------------------------------------------HTML 5 Overrides-------------------------------------*/
+
+address, article, aside, figcaption, figure, footer, header, hgroup, nav, section{display:block; margin:0; padding:0;}
+
+q{display:block; padding:0 10px 8px 10px; color:#0066FF; background-color:#000000; font-style:italic; line-height:normal;}
+q:before{content:'“ '; font-size:26px;}
+q:after{content:' „'; font-size:26px; line-height:0;}
+
+/* ----------------------------------------------Wrapper-------------------------------------*/
+
+div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
+
+.row1, .row1 a{color:#ffffff; background-color:#000000;}
+.row2{color:#979797; background-color:#000000;font-family: }
+.row2 a{color:#0066FF; background-color:#000000;}
+.row3, .row3 a{color:#0066FF; background-color:#000000;}
+
+
+/*----------------------------------------------Generalise-------------------------------------*/
+
+#header, #container, #footer{display:block; width:960px; margin:0 auto;}
+
+nav ul{margin:0; padding:0; list-style:none;}
+
+h1, h2, h3, h4, h5, h6{margin:0; padding:0; font-size:16px; font-weight:bold; font-style:normal; line-height:normal; text-transform:uppercase;}
+
+address{font-style:normal;}
+
+blockquote, q{display:block; padding:8px 10px; color:#979797; background-color:#000000; font-style:italic; line-height:normal;}
+blockquote:before, q:before{content:'“ '; font-size:8px;}
+blockquote:after, q:after{content:' „'; font-size:26px; line-height:0;}
+
+form, fieldset, legend{margin:0; padding:0; border:none; float:left;}
+legend{display:none;}
+input, textarea, select{font-size:9px; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}
+
+.one_third, .two_third, .three_third{display:block; float:left; margin:0 30px 0 0;}
+.one_third{width:300px;}
+.two_third{width:630px;}
+.three_third{width:960px; float:none; margin-right:0; clear:both;}
+.one_quarter, .two_quarter, .three_quarter, .four_quarter{display:block; float:left; margin:0 20px 0 0; text-align:justify;}
+.one_quarter{width:225px;}
+.two_quarter{width:470px;}
+.three_quarter{width:715px;}
+.four_quarter{width:960px; float:none; margin-right:0; clear:both;}
+.lastbox{margin-right:0;}
+
+/*----------------------------------------------Header-------------------------------------*/
+
+#header{padding:20px;}
+
+#header form{display:block; width:290px; float:right; margin:20px 0; padding:0;}
+#header form input{display:block; float:left; width:200px; margin:0; padding:5px; color:#C0BAB6; background-color:#000000; border:1px solid #666666;}
+#header form #sf_submit{display:block; float:right; width:70px; font-size:10px; font-weight:bold; text-transform:uppercase; color:#FFFFFF; background-color:#000000; border:none; cursor:pointer;}
+#header nav{display:block; width:100%; margin:0; padding:0px; color:#FFFFFF; background-color:#000000; clear:both;}
+#header nav li{display:inline; margin-right:5px; text-transform:uppercase;float: left; line-height:normal; margin-left:15px;}
+#header nav li.last{margin-right:0;}
+#header nav li a{font-size: 22px; font-family:"Tauri", sans-serif;text-transform:capitalize;font-weight:normal;
+				text-decoration:none; padding:10px; border-radius:5px; margin-top:3px; border-bottom: 3px solid #0066FF; color:#C0BAB6; background-color:#000000;}
+#header nav li a:hover{color:#000000; background-color:#0066FF;}
+
+/*----------------------------------------------Content Area-------------------------------------*/
+
+#container{padding:30px 0;}
+#container section{display:block; width:100%; margin:0 0 30px 0; padding:0;}
+#container .last{margin:0;}
+#container .more{text-align:right;}
+
+/* ------Slider-----*/
+
+#container #slider{}
+
+/* ------Shout-----*/
+
+#container #shout{display:block; width:930px; padding:15px; line-height:1.8em; background-color:#000000; font-family: 'Tauri', sans-serif; font-size: 20px; text-align:justify;}
+#container #shout p{margin:0; padding:0;}
+
+/* ------Main Content-----*/
+
+#container #homepage{display:block; width:100%; line-height:1.6em;}
+/*#container #homepage h1{margin-bottom:25px;} /*border-image: url('DivisoriaP.png')}*/
+
+	/*padding-bottom:10px; border-bottom:1px solid #D6D6D6;color:#0066FF;}*/
+
+#container #homepage #services {}
+#container #homepage #services article{margin-right: auto; margin-left: auto;display:inline-block;font-family: 'Tauri', sans-serif; float:left;font-weight:bold}
+#container #homepage #services figure{float:left;margin:0; padding:0;margin-top:70px}
+#container #homepage #services p{text-align: justify; padding:0;margin-top:20px;}
+#container #homepage #titulo {font-family: 'Tauri', sans-serif; color: #0066FF;}
+#container #homepage #listafan {margin: 0; padding: 0; float: left; width: 50%;}
+#container #homepage #listafan p{text-decoration: underline; border-bottom: 5px; color: #0066FF;}
+#container #homepage #listasamyra {margin: 0; padding: 0; float: right; width: 50%;}
+#container #homepage #listasamyra p{text-decoration: underline; border-bottom: 5px; color: #0066FF;}
+
+#container #homepage #latest{}
+#container #homepage #latest article{}
+#container #homepage #latest figure{padding:4px; border:1px solid #D6D6D6; text-align:center;}
+#container #homepage #latest figcaption{padding:5px; text-align:center; color:#979797; background-color:#000000; text-transform:uppercase; text-align:center;}
+
+/*----------------------------------------------Footer-------------------------------------*/
+
+#footer{padding:20px 0; color:#0066FF;}
+#footer p{margin:0; padding:0;}
+
